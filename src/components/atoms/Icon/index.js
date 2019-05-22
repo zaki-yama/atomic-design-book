@@ -2,13 +2,14 @@ import React from "react";
 import styles from "./styles.css";
 import { defaultProps } from "recompose";
 
-export const TrashCanIconPresenter = ({
+export const IconPresenter = ({
+  iconName,
   height = 20,
   width = 20,
   ...props
 }) => (
   <img
-    src="/icons/trash-can.svg"
+    src={`/icons/${iconName}.svg`}
     alt=""
     height={height}
     width={width}
@@ -26,13 +27,14 @@ export const IconContainer = ({
   return presenter({ onClick, className, ...props });
 };
 
-export const TrashCanIcon = props => {
-  return (
-    <IconContainer
-      presenter={presenterProps => (
-        <TrashCanIconPresenter {...presenterProps} />
-      )}
-      {...props}
-    />
-  );
-};
+export const iconFactory = iconName => props => (
+  <IconContainer
+    presenter={presenterProps => <IconPresenter {...presenterProps} />}
+    {...{ iconName, ...props }}
+  />
+);
+
+export const TrashCanIcon = iconFactory("trash-can");
+export const ChevronRightIcon = iconFactory("chevron-right");
+export const SearchIcon = iconFactory("search");
+export const SettingsIcon = iconFactory("settings");
