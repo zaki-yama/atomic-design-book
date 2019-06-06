@@ -1740,6 +1740,14 @@
   resolved "https://registry.yarnpkg.com/@types/react/-/react-15.6.25.tgz#3f7d487363b4eb6d71b267ccb0910651418d3958"
   integrity sha512-6wPEZmG7GI0jWU/EwbUnY3UNoiwZ5AAGeJ8rSW1YFO06fFsfS1n0AiAdZlr48IYj81LGbSdNbr6AboXgTpyLEg==
 
+"@types/react@^16.8.19":
+  version "16.8.19"
+  resolved "https://af.cybozu.com/artifactory/api/npm/npm/@types/react/-/react-16.8.19.tgz#629154ef05e2e1985cdde94477deefd823ad9be3"
+  integrity sha1-YpFU7wXi4Zhc3elEd97v2COtm+M=
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/storybook__addon-actions@^3.4.2":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@types/storybook__addon-actions/-/storybook__addon-actions-3.4.2.tgz#1d08689cc3259269ddb3479a2307c9d16944309e"
