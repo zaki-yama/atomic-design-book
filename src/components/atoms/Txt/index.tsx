@@ -1,7 +1,15 @@
-import React from "react";
+import React, { ReactHTML } from "react";
 import styles from "./styles.css";
 
-const txtFactory = role => ({
+type Props = {
+  tag: keyof ReactHTML;
+  size: string;
+  className: string;
+  [tag: string]: any;
+};
+
+// FIXME Bad types
+const txtFactory: (role: any) => any = role => ({
   tag: Tag = "p",
   size = "m",
   className,
