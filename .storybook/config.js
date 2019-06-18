@@ -1,4 +1,5 @@
 import { configure, addDecorator } from "@storybook/react";
+import 'storybook-chromatic';
 
 import { storiesOf } from "@storybook/react";
 
