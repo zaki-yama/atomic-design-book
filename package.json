@@ -16,7 +16,8 @@
     "report:visual": "backstop openReport",
     "build": "mkdirp ./build && cpx \"./src/index.html\" ./build && cpx \"./assets/**/*.*\" ./build && webpack && ws -d ./build",
     "svg": "svg-sprite-generate -d ./assets/icons -o ./assets/icons.svg",
-    "checkpoint": "node scripts/checkpoint.js"
+    "checkpoint": "node scripts/checkpoint.js",
+    "chromatic": "chromatic test"
   },
   "dependencies": {
     "moment": "^2.19.2",
